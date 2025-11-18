@@ -2,7 +2,7 @@
 
 """
 OBJECTIVE: Build a simple password checker that tests if passwords are secure
-INSTRUCTIONS: Fill in the THREE functions below where it says "YOUR CODE HERE"
+INSTRUCTIONS: Fill in the 5 functions below where it says "YOUR CODE HERE"
 """
 
 # List of commonly hacked passwords
@@ -156,18 +156,3 @@ for pwd in test_passwords:
 print("\n" + "=" * 50)
 print("Now test your own passwords above!")
 print("=" * 50)
-
-
-# ========== ALTERNATIVE SOLUTIONS ==========
-# (for advanced discussion)
-
-# Alternative for has_repeated_characters using zip:
-def has_repeated_characters_v2(password):
-    for c1, c2, c3 in zip(password, password[1:], password[2:]):
-        if c1 == c2 == c3:
-            return True
-    return False
-
-# Alternative for is_common_password using any:
-def is_common_password_v2(password):
-    return any(password.lower() == common for common in COMMON_PASSWORDS)
