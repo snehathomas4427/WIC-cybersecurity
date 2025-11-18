@@ -17,8 +17,6 @@ def has_uppercase(password):
     TODO: Check if password has at least one uppercase letter (A-Z)
     
     Return True if it does, False if it doesn't
-    
-    HINT: Loop through each character and check if char.isupper()
     """
     # YOUR CODE HERE
     pass
